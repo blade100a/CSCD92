@@ -1,5 +1,4 @@
-# CSCD92
+# CSCD92 2022 Summer
 # Name: Harri P.
 
-Course Content
 Will have exercises and other arctivites done in this repo
