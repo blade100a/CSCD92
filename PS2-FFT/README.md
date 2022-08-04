@@ -5,3 +5,6 @@ Problem set 2
 
 Main Idea:
 - Was to try and work on FFT package and understand what occurs or happens
+
+Problem:
+- Facing issues with library, cant find library
