@@ -23,7 +23,8 @@ int main() {
 		for(int j = -9; j < 10; j++){
 			if(j == arr[i]){
 				// Adds to count
-				count[j+9]++;
+				int k = j + 9;
+				count[k] += 1;
 			}
 		}
 	}
@@ -31,11 +32,10 @@ int main() {
 	// Prints values
 	for (int i = 0; i < 19; i++){
 		// Prints out values
-		std::cout << i-9 << " " << arr[i] << "\n";
+		std::cout << i-9 << " " << count[i] << "\n";
 	}
 
 	// Deallocates the array
 	delete[] arr;
-	delete[] count;
 	return 0;
 }
