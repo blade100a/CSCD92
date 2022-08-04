@@ -10,6 +10,7 @@ Part 2 FFT
 #include <complex>
 #include <fftw3.h>
 #include <cmath>
+#include "fft-plan.h"
 using namespace std;
 
 // Macros
@@ -22,26 +23,20 @@ int main(){
 	//  Create input and out complex arrays
 	fftw_complex x[n];
 	fftw_complex y[n];
-	// Fill x complex array
+	// Fill x complex array	
 	for (int i = 0; i < n; i++){
 		x[i][REAL] = i + 1
 		x[i][IMAG] = 0;
 	}
 	// Create plan to run FFTW
-	fftw_plan plan = fftw_plan_dft(n, x, y, FFTW_FORWARD, FFTW_ESTIMATE);
-	// Execute the plan
-	fftw_execute(plan);
-	// Destroy plan after one execute
-	fftw_destroy_plan(plan);
-	// ??????? not sure the need 
-	fftw_cleanup();
+	fft_setup(n. x, y);
 	// Output the following complex equations after FFTW
-	cout << "FFT = " << endl;
+	std::cout << "FFT = " << std::endl;
 	for (int i = 0; i < n; i++){
 		if (y[i][IMAG] < 0)
-			cout << y[i][REAL] << "-" << abs(y[i][IMAG]) << "i" << endl;
+			std::cout << y[i][REAL] << "-" << abs(y[i][IMAG]) << "i" << std::endl;
 		else
-			cout << y[i][REAL] << "+" << y[i][IMAG] << "i" << endl;
+			std::cout << y[i][REAL] << "+" << y[i][IMAG] << "i" << std::endl;
 	}
 	return 0;
 
