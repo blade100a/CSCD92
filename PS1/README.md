@@ -4,3 +4,6 @@ Problem set 1
 - After we would count the occurence of certain values(Specfic -9 to 9)
 - We'd Print those values and deallocate the memory
 - We return 0 to finish as the program executed successfully
+
+Problems:
+- NO issues anymore, finished!!
