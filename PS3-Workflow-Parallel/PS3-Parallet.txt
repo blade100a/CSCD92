@@ -21,12 +21,12 @@ Part B:
 The script `sweep_bondbreak.sh` executes 96 repeats of the computation of the bond breakage time, one by one.
 However, these could all run in parallel.
 	1. Time how long the (serial) job took.
-		- Roughly 12 min 47 seconds
+		- 12 min 47 seconds with 00:12:47 CPU TIME
 	2. Use GNU Parallel in a modified version of sweep_bondbreak.sh to parallelize the computation using 16 cores on a single compute node of the Teach cluster.
 		- module load and added parrallel in the for loop
 	3. Submit this new script to the scheduler.
 		- sbatch again with new script
 	4. How long did the new script take?
-		- 1 min 52 seconds
+		- 30 seconds with 00:08:00 cpu time
 	5. Add the script you modified and its job output (not the stuff in the "out" directory) to your git repository.
 		- Added 
