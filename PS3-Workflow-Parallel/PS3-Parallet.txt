@@ -1,0 +1,32 @@
+PS3 Workflow Parallelization
+Harri Pahirathan
+
+Part A:
+A serial job to compute chemical bond breaking times can be found on the Teach cluster:
+	1. Log into the teach cluster.
+		- ssh lcl_uotcscd92s2111@teach.scinet.utoronto.ca
+	2. Change directory to your scratch folder.
+		- cd $SCRATCH
+	3. Copy the material needed for this course.
+		- cp -r /scinet/course/ss2020/1_introhpc $SCRATCH
+	4. Change to the newly created directory.
+		- cd 1_introhpc
+	5. Submit the job sweep_bondbreak.sh with sbatch:
+		- sbatch sweep_bondbreak.sh
+	6. Check the status and performance of your job in the queue
+		- jobperf JOBID, sacct, squeue
+	7. Once completed, check the output in the file sweep_bondbreak_output.txt
+		- cat sweep_bondbreak_output.txt
+Part B:
+The script `sweep_bondbreak.sh` executes 96 repeats of the computation of the bond breakage time, one by one.
+However, these could all run in parallel.
+	1. Time how long the (serial) job took.
+		- Roughly 12 min 47 seconds
+	2. Use GNU Parallel in a modified version of sweep_bondbreak.sh to parallelize the computation using 16 cores on a single compute node of the Teach cluster.
+		- module load and added parrallel in the for loop
+	3. Submit this new script to the scheduler.
+		- sbatch again with new script
+	4. How long did the new script take?
+		- 1 min 52 seconds
+	5. Add the script you modified and its job output (not the stuff in the "out" directory) to your git repository.
+		- Added 
