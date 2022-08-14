@@ -1,0 +1,87 @@
+Option j requires an argument
+Usage:
+
+parallel [options] [command [arguments]] < list_of_arguments
+parallel [options] [command [arguments]] (::: arguments|:::: argfile(s))...
+cat ... | parallel --pipe [options] [command [arguments]]
+
+-j n            Run n jobs in parallel
+-k              Keep same order
+-X              Multiple arguments with context replace
+--colsep regexp Split input on regexp for positional replacements
+{} {.} {/} {/.} {#} {%} {= perl code =} Replacement strings
+{3} {3.} {3/} {3/.} {=3 perl code =}    Positional replacement strings
+With --plus:    {} = {+/}/{/} = {.}.{+.} = {+/}/{/.}.{+.} = {..}.{+..} =
+                {+/}/{/..}.{+..} = {...}.{+...} = {+/}/{/...}.{+...}
+
+-S sshlogin     Example: foo@server.example.com
+--slf ..        Use ~/.parallel/sshloginfile as the list of sshlogins
+--trc {}.bar    Shorthand for --transfer --return {}.bar --cleanup
+--onall         Run the given command with argument on all sshlogins
+--nonall        Run the given command with no arguments on all sshlogins
+
+--pipe          Split stdin (standard input) to multiple jobs.
+--recend str    Record end separator for --pipe.
+--recstart str  Record start separator for --pipe.
+
+See 'man parallel' for details
+
+Academic tradition requires you to cite works you base your article on.
+If you use programs that use GNU Parallel to process data for an article in a
+scientific publication, please cite:
+
+  O. Tange (2011): GNU Parallel - The Command-Line Power Tool,
+  ;login: The USENIX Magazine, February 2011:42-47.
+
+This helps funding further development; AND IT WON'T COST YOU A CENT.
+If you pay 10000 EUR you should feel free to use GNU Parallel without citing.
+
+
+real	0m5.252s
+user	0m5.157s
+sys	0m0.067s
+345.047399998114
+0.08369999999999989
+1.4297999999999134
+160.1805000004133
+0.027900000000000064
+105.41459999966511
+179.47290000105374
+290.6439000014621
+246.04590000326374
+0.0525000000000002
+246.8040000032889
+0.040800000000000135
+158.0082000003412
+0.03780000000000012
+63.64260000024868
+0.0774
+0.0342000000000001
+117.6854999994912
+92.09729999985386
+200.54190000175316
+202.85190000182985
+0.05580000000000022
+261.2106000032735
+374.9900999962712
+198.3414000016801
+377.83349999609624
+0.05040000000000019
+0.05100000000000019
+152.70840000016526
+323.7887999994223
+0.10199999999999956
+0.060600000000000244
+0.0522000000000002
+0.0660000000000002
+394.1816999950901
+303.5442000006682
+0.07560000000000003
+91.24709999986591
+275.92020000236823
+347.8499999979415
+312.50790000011654
+0.09539999999999968
+0.04560000000000016
+0.0345000000000001
+172.83000000083322
