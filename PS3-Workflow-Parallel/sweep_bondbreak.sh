@@ -20,8 +20,8 @@ for ((S=1; S<=NREPS; S++)) ; do
  echo "Repetition $S/$NREPS"
  DFN=out/output-$T-$S.data
  LFN=out/output-$T-$S.log
- time ./bondbreak $X $T $DT $MT $S $DFN $ODT $LFN
-done | parallel -j
+ time parallel ./bondbreak $X $T $DT $MT $S $DFN $ODT $LFN
+done
 
 # Extract the breakage times from the logs
 awk '/BREAKAGE DETECTED/{print $8}' out/*.log 

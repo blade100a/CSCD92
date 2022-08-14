@@ -1,45 +1,483 @@
-Option j requires an argument
-Usage:
+Repetition 1/96
 
-parallel [options] [command [arguments]] < list_of_arguments
-parallel [options] [command [arguments]] (::: arguments|:::: argfile(s))...
-cat ... | parallel --pipe [options] [command [arguments]]
+real	0m0.278s
+user	0m0.201s
+sys	0m0.083s
+Repetition 2/96
 
--j n            Run n jobs in parallel
--k              Keep same order
--X              Multiple arguments with context replace
---colsep regexp Split input on regexp for positional replacements
-{} {.} {/} {/.} {#} {%} {= perl code =} Replacement strings
-{3} {3.} {3/} {3/.} {=3 perl code =}    Positional replacement strings
-With --plus:    {} = {+/}/{/} = {.}.{+.} = {+/}/{/.}.{+.} = {..}.{+..} =
-                {+/}/{/..}.{+..} = {...}.{+...} = {+/}/{/...}.{+...}
+real	0m0.275s
+user	0m0.212s
+sys	0m0.070s
+Repetition 3/96
 
--S sshlogin     Example: foo@server.example.com
---slf ..        Use ~/.parallel/sshloginfile as the list of sshlogins
---trc {}.bar    Shorthand for --transfer --return {}.bar --cleanup
---onall         Run the given command with argument on all sshlogins
---nonall        Run the given command with no arguments on all sshlogins
+real	0m0.276s
+user	0m0.209s
+sys	0m0.075s
+Repetition 4/96
 
---pipe          Split stdin (standard input) to multiple jobs.
---recend str    Record end separator for --pipe.
---recstart str  Record start separator for --pipe.
+real	0m0.275s
+user	0m0.209s
+sys	0m0.074s
+Repetition 5/96
 
-See 'man parallel' for details
+real	0m0.276s
+user	0m0.202s
+sys	0m0.082s
+Repetition 6/96
 
-Academic tradition requires you to cite works you base your article on.
-If you use programs that use GNU Parallel to process data for an article in a
-scientific publication, please cite:
+real	0m0.276s
+user	0m0.211s
+sys	0m0.073s
+Repetition 7/96
 
-  O. Tange (2011): GNU Parallel - The Command-Line Power Tool,
-  ;login: The USENIX Magazine, February 2011:42-47.
+real	0m0.277s
+user	0m0.203s
+sys	0m0.082s
+Repetition 8/96
 
-This helps funding further development; AND IT WON'T COST YOU A CENT.
-If you pay 10000 EUR you should feel free to use GNU Parallel without citing.
+real	0m0.276s
+user	0m0.205s
+sys	0m0.078s
+Repetition 9/96
 
+real	0m0.274s
+user	0m0.198s
+sys	0m0.083s
+Repetition 10/96
 
-real	0m5.252s
-user	0m5.157s
-sys	0m0.067s
+real	0m0.273s
+user	0m0.204s
+sys	0m0.077s
+Repetition 11/96
+
+real	0m0.275s
+user	0m0.211s
+sys	0m0.072s
+Repetition 12/96
+
+real	0m0.276s
+user	0m0.211s
+sys	0m0.072s
+Repetition 13/96
+
+real	0m0.280s
+user	0m0.202s
+sys	0m0.087s
+Repetition 14/96
+
+real	0m0.276s
+user	0m0.199s
+sys	0m0.085s
+Repetition 15/96
+
+real	0m0.275s
+user	0m0.206s
+sys	0m0.076s
+Repetition 16/96
+
+real	0m0.278s
+user	0m0.200s
+sys	0m0.086s
+Repetition 17/96
+
+real	0m0.275s
+user	0m0.205s
+sys	0m0.077s
+Repetition 18/96
+
+real	0m0.276s
+user	0m0.198s
+sys	0m0.085s
+Repetition 19/96
+
+real	0m0.275s
+user	0m0.189s
+sys	0m0.094s
+Repetition 20/96
+
+real	0m0.277s
+user	0m0.198s
+sys	0m0.086s
+Repetition 21/96
+
+real	0m0.277s
+user	0m0.201s
+sys	0m0.084s
+Repetition 22/96
+
+real	0m0.274s
+user	0m0.201s
+sys	0m0.081s
+Repetition 23/96
+
+real	0m0.275s
+user	0m0.207s
+sys	0m0.076s
+Repetition 24/96
+
+real	0m0.278s
+user	0m0.207s
+sys	0m0.077s
+Repetition 25/96
+
+real	0m0.275s
+user	0m0.205s
+sys	0m0.078s
+Repetition 26/96
+
+real	0m0.273s
+user	0m0.196s
+sys	0m0.085s
+Repetition 27/96
+
+real	0m0.278s
+user	0m0.209s
+sys	0m0.077s
+Repetition 28/96
+
+real	0m0.276s
+user	0m0.213s
+sys	0m0.071s
+Repetition 29/96
+
+real	0m0.277s
+user	0m0.195s
+sys	0m0.090s
+Repetition 30/96
+
+real	0m0.275s
+user	0m0.200s
+sys	0m0.084s
+Repetition 31/96
+
+real	0m0.275s
+user	0m0.192s
+sys	0m0.091s
+Repetition 32/96
+
+real	0m0.276s
+user	0m0.202s
+sys	0m0.082s
+Repetition 33/96
+
+real	0m0.278s
+user	0m0.190s
+sys	0m0.095s
+Repetition 34/96
+
+real	0m0.276s
+user	0m0.204s
+sys	0m0.080s
+Repetition 35/96
+
+real	0m0.276s
+user	0m0.200s
+sys	0m0.084s
+Repetition 36/96
+
+real	0m0.277s
+user	0m0.208s
+sys	0m0.077s
+Repetition 37/96
+
+real	0m0.275s
+user	0m0.204s
+sys	0m0.079s
+Repetition 38/96
+
+real	0m0.275s
+user	0m0.200s
+sys	0m0.083s
+Repetition 39/96
+
+real	0m0.275s
+user	0m0.200s
+sys	0m0.083s
+Repetition 40/96
+
+real	0m0.277s
+user	0m0.197s
+sys	0m0.088s
+Repetition 41/96
+
+real	0m0.276s
+user	0m0.190s
+sys	0m0.094s
+Repetition 42/96
+
+real	0m0.275s
+user	0m0.191s
+sys	0m0.092s
+Repetition 43/96
+
+real	0m0.275s
+user	0m0.204s
+sys	0m0.079s
+Repetition 44/96
+
+real	0m0.275s
+user	0m0.191s
+sys	0m0.092s
+Repetition 45/96
+
+real	0m0.275s
+user	0m0.201s
+sys	0m0.082s
+Repetition 46/96
+
+real	0m0.275s
+user	0m0.197s
+sys	0m0.085s
+Repetition 47/96
+
+real	0m0.275s
+user	0m0.189s
+sys	0m0.093s
+Repetition 48/96
+
+real	0m0.276s
+user	0m0.200s
+sys	0m0.084s
+Repetition 49/96
+
+real	0m0.276s
+user	0m0.201s
+sys	0m0.083s
+Repetition 50/96
+
+real	0m0.277s
+user	0m0.208s
+sys	0m0.077s
+Repetition 51/96
+
+real	0m0.276s
+user	0m0.206s
+sys	0m0.077s
+Repetition 52/96
+
+real	0m0.275s
+user	0m0.196s
+sys	0m0.088s
+Repetition 53/96
+
+real	0m0.276s
+user	0m0.209s
+sys	0m0.074s
+Repetition 54/96
+
+real	0m0.276s
+user	0m0.200s
+sys	0m0.085s
+Repetition 55/96
+
+real	0m0.276s
+user	0m0.208s
+sys	0m0.076s
+Repetition 56/96
+
+real	0m0.277s
+user	0m0.200s
+sys	0m0.084s
+Repetition 57/96
+
+real	0m0.276s
+user	0m0.207s
+sys	0m0.077s
+Repetition 58/96
+
+real	0m0.275s
+user	0m0.210s
+sys	0m0.073s
+Repetition 59/96
+
+real	0m0.277s
+user	0m0.199s
+sys	0m0.085s
+Repetition 60/96
+
+real	0m0.277s
+user	0m0.190s
+sys	0m0.095s
+Repetition 61/96
+
+real	0m0.275s
+user	0m0.205s
+sys	0m0.078s
+Repetition 62/96
+
+real	0m0.277s
+user	0m0.188s
+sys	0m0.097s
+Repetition 63/96
+
+real	0m0.275s
+user	0m0.194s
+sys	0m0.090s
+Repetition 64/96
+
+real	0m0.276s
+user	0m0.206s
+sys	0m0.078s
+Repetition 65/96
+
+real	0m0.276s
+user	0m0.211s
+sys	0m0.073s
+Repetition 66/96
+
+real	0m0.276s
+user	0m0.195s
+sys	0m0.089s
+Repetition 67/96
+
+real	0m0.274s
+user	0m0.199s
+sys	0m0.083s
+Repetition 68/96
+
+real	0m0.276s
+user	0m0.190s
+sys	0m0.093s
+Repetition 69/96
+
+real	0m0.368s
+user	0m0.206s
+sys	0m0.076s
+Repetition 70/96
+
+real	0m0.277s
+user	0m0.199s
+sys	0m0.085s
+Repetition 71/96
+
+real	0m0.275s
+user	0m0.208s
+sys	0m0.074s
+Repetition 72/96
+
+real	0m0.276s
+user	0m0.197s
+sys	0m0.087s
+Repetition 73/96
+
+real	0m0.276s
+user	0m0.197s
+sys	0m0.086s
+Repetition 74/96
+
+real	0m0.276s
+user	0m0.189s
+sys	0m0.095s
+Repetition 75/96
+
+real	0m0.278s
+user	0m0.206s
+sys	0m0.079s
+Repetition 76/96
+
+real	0m0.276s
+user	0m0.198s
+sys	0m0.085s
+Repetition 77/96
+
+real	0m0.276s
+user	0m0.197s
+sys	0m0.086s
+Repetition 78/96
+
+real	0m0.276s
+user	0m0.204s
+sys	0m0.079s
+Repetition 79/96
+
+real	0m0.278s
+user	0m0.201s
+sys	0m0.084s
+Repetition 80/96
+
+real	0m0.277s
+user	0m0.198s
+sys	0m0.086s
+Repetition 81/96
+
+real	0m0.276s
+user	0m0.198s
+sys	0m0.086s
+Repetition 82/96
+
+real	0m0.275s
+user	0m0.200s
+sys	0m0.082s
+Repetition 83/96
+
+real	0m0.276s
+user	0m0.209s
+sys	0m0.074s
+Repetition 84/96
+
+real	0m0.276s
+user	0m0.202s
+sys	0m0.082s
+Repetition 85/96
+
+real	0m0.289s
+user	0m0.203s
+sys	0m0.095s
+Repetition 86/96
+
+real	0m0.280s
+user	0m0.209s
+sys	0m0.078s
+Repetition 87/96
+
+real	0m0.276s
+user	0m0.207s
+sys	0m0.076s
+Repetition 88/96
+
+real	0m0.272s
+user	0m0.196s
+sys	0m0.084s
+Repetition 89/96
+
+real	0m0.279s
+user	0m0.195s
+sys	0m0.091s
+Repetition 90/96
+
+real	0m0.276s
+user	0m0.210s
+sys	0m0.074s
+Repetition 91/96
+
+real	0m0.276s
+user	0m0.195s
+sys	0m0.088s
+Repetition 92/96
+
+real	0m0.275s
+user	0m0.187s
+sys	0m0.095s
+Repetition 93/96
+
+real	0m0.276s
+user	0m0.205s
+sys	0m0.079s
+Repetition 94/96
+
+real	0m0.276s
+user	0m0.197s
+sys	0m0.086s
+Repetition 95/96
+
+real	0m0.276s
+user	0m0.212s
+sys	0m0.071s
+Repetition 96/96
+
+real	0m0.278s
+user	0m0.197s
+sys	0m0.088s
 345.047399998114
 0.08369999999999989
 1.4297999999999134
