@@ -66,7 +66,7 @@
 10. Please provide any comments about the provided *lectures notes* on
 "Practical Scientific Computing" by R.Van Zon and M.Ponce.
 
-	- I actually really liked the *lecture notes* since they offered a rapid way to learn knowledge in a short period of time and practically served as a progression chart for what each topic in this course is aiming to cover. Tina and I identified a few minor mistakes, mostly in the grammar and spelling, but none of them indicated that the knowledge about the subject was incorrect as all topics were explained with precise detail and accuracy. 
+	- I actually really liked the *lecture notes* since they offered a rapid way to learn knowledge in a short period of time and practically served as a progression chart for what each topic in this course is aiming to cover. Tina and I identified a few minor mistakes, mostly in the grammar and spelling, but none of them indicated that the knowledge about the subject was incorrect as all topics were explained with precise detail and accuracy. I also found that the code examples gave a better idea of exactly how it can be seen in code. 
 
 <div style="page-break-after: always; visibility: hidden"> 
 \pagebreak 
@@ -77,7 +77,7 @@
 please provide comments, recommendations or suggestions in how to improve,
 change, and/or adjust the material covered.
 
-	- I think this would be a fantastic curricular* course for CMS students since it teaches them how to be more efficient in code, how to code more cleverly, and how to think about new ideas that are relevant to the development of the future of technology. I do believe that having problems or examples from the lecture notes and from Marcelo's examples truly helps to put the knowledge into practice and to be ready for HPC and parallel work. As a result, in order to put the advice or proposal to the test, each topic of the week should have a problem or assignment. The NVIDIA seminar or the SCINET workshops, in my opinion, allow students to examine pertinent topics during this time, and I think it's a nice adaption to the course to have relevent tech company seminars and workshops that involve topics relevant in the sphere of this course to analyse and other topics. 
+	- I think this would be a fantastic *curricular* course for CMS students since it teaches them how to be more efficient in code, how to code more cleverly, and how to think about new ideas that are relevant to the development of the future of technology. I do believe that having problems or examples from the lecture notes and from Marcelo's examples truly helps to put the knowledge into practice and to be ready for HPC and parallel work. As a result, in order to put the advice or proposal to the test, each topic of the week should have a problem or assignment. The NVIDIA seminar or the SCINET workshops, in my opinion, allow students to examine pertinent topics during this time, and I think it's a nice adaption to the course to have relevent tech company seminars and workshops that involve topics relevant in the sphere of this course to analyse and other topics. 
 
 <div style="page-break-after: always; visibility: hidden"> 
 \pagebreak 
@@ -144,7 +144,7 @@ The code can take dataset and the size of the data sets affects the different
 metrics of the performance (i.e. running time, memory utilization, IO, communication, etc.)
 a) What steps would you take in order to study and draft a performance analysis report of this code?
 
-	- Given a code that takes a dataset and the size of the data sets affects the different metrics of the performance is a problem that can be faced with large scale problems or large data to be interpeted. There are variety of steps that can be taken in order to study and draft a performance analysis report of this code. I would first, see how much of the code is IO as its the slowest portion of most code with large amounts of data. I would see how much of performance is given to just this portion if its bottlenecking, possible solutions changing data to binary format, parallelize the io, minimize number of files for more responsive, etc. After checking the elapsed and cpu time we would determine the most performance we can get out of the slowest part. I would add timing statements to measure out certain sections of the code to find areas than be optimized, modularized, etc. 
+	- Given a code that takes a dataset and the size of the data sets affects the different metrics of the performance is a problem that can be faced with large scale problems or large data to be interpeted. There are variety of steps that can be taken in order to study and draft a performance analysis report of this code. I would first, see how much of the code is IO as its the slowest portion of most code with large amounts of data. I would see how much of performance is given to just this portion if its bottlenecking, possible solutions changing data to binary format, parallelize the io, minimize number of files for more responsive, etc. After checking the elapsed and cpu time we would determine the most performance we can get out of the slowest part. I would add timing statements to measure out certain sections of the code to find areas than be optimized, modularized, etc.
 
 <div style="page-break-after: always; visibility: hidden">
 \pagebreak
@@ -157,7 +157,7 @@ For details on this process, see
 	https://alliancecan.ca/en/services/advanced-research-computing/research-portal/resource-allocation-competitions/rac-frequently-asked-questions
 
 a) What type of information should you submit?
-	- Depending on the code, the data I would provide would be the amount of nodes, cores per job, tasks, and number of GPUs. I would do a scaling study to find the optimal number of resources (cores, CPUs, and GPUs) for improved performance in some of these scenarios. Using some timing statements to evaluate and optimise the code's pertinent areas, running multiple times to see trends.
+	- Depending on the code, the data I would provide would be the amount of nodes, cores per job, tasks, and number of GPUs. I would do a scaling study to find the optimal number of resources (nodes, CPUs, and GPUs) for improved performance in some of these scenarios. Using some timing statements to evaluate and optimise the code's pertinent areas, running multiple times to see trends.
 	
 b) Should you also submit a strong and weak scaling? Justify.
 	- I believe here I would need to submit a strong and weak scaling, the reasoning being is it provides a good indication to the job sizes and how much resouce should be requested from the national system as it provides a better level of efficiency. We know strong scaling(Amdahl’s law) is fixed size with respect to a number or processors and weak scaling(Gustafson’s law) is scaled size with respect to a number of processors, thus providing a better insight in requesting the number of processors needed for each job once submited. Otherwise, if we dont submit a strong and weak scaling, we wouldn't know the best efficient way of requesting our jobs especially if they are larger or smaller jobs in scale. 
