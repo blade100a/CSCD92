@@ -6,7 +6,7 @@ For doing this, one could approximate the integral as follows h SUM (4/( 1 + xi^
 2. Verify your implementation comparing against the expected analytical solution, which should be "pi".
 - Done sum is equal to 3, roughly equal to pi
 3. Provide an estimate of the numerical error and possible causes. Justify this with some nunerical experimentation.
-- STILL NEED TO DO
+- Provided an estimate of numerical error between pi and sum, reasons why its not exact is because the riemann summ isnt perfect but a good approximation under the curve
 4. Parallelize your implementation using a shared-memory approach.
 - Done in Parallel Folder(Needs work as times are too similar)
 5. Perform an scaling analysis, by comparing the runtime in different cases, e.g. serial, and multiple number of threads. Plot your results generating an scaling curve for your implementation. Recall to perform your scaling analyis in an appropiate setup, i.e. not running in a shared resource in the system.
