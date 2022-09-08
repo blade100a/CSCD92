@@ -15,11 +15,6 @@ PS3-NI-and-Parallel-SM Parallel
 
 using namespace std;
 
-// Function to calulate the equation in the integral
-double eq(double x){
-	return (4/(1 + (pow(x, 2))));
-}
-
 // Function to calculate the Left Sum
 double left_sum(double N){
 	// Variables given to us
@@ -33,7 +28,7 @@ double left_sum(double N){
 	#pragma omp parallel for shared(xi, H, N) private(i) reduction(+:sum)
 	for(i = 0; i < (int)N; i++){
 		xi = i*H;
-		sum += eq(xi)*H;
+		sum += (4/(1 + (pow(xi, 2))))*H;
 	}
 	return sum;
 }
