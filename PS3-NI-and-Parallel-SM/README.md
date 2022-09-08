@@ -12,4 +12,4 @@ Reference:
 
 TIMES:
 - Serial - 0.1 sec
-- Parallel(2 Threads) - 0.09 sec
+- Parallel(6 Threads) - 0.08 sec
