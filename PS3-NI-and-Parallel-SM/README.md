@@ -10,5 +10,5 @@ Reference:
 - Lecture notes
 
 TIMES:
-- Serial - 0.11 sec
-- Parallel(4 Threads) - 0.1 sec
+- Serial - 0.1 sec
+- Parallel(6 Threads) - 0.08 sec
