@@ -14,11 +14,6 @@ PS3-NI-and-Parallel-SM Serial
 
 using namespace std;
 
-// Function to calulate the equation in the integral
-double eq(double x){
-	return (4/(1 + (pow(x, 2))));
-}
-
 // Function to calculate the Left Sum
 double left_sum(double N){
 	// Variables given to us
@@ -30,7 +25,7 @@ double left_sum(double N){
 	// Loops through a total of the parition and adds the sum
 	for(int i = 0; i < N; i++){
 		xi = i*H;
-		sum += eq(xi)*H;
+		sum += (4/(1 + (pow(xi, 2))))*H;
 	}
 	return sum;
 }
