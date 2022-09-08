@@ -23,7 +23,7 @@ double eq(double x){
 double left_sum(double N){
 	// Variables given to us
 	double H, xi, sum;
-	H = 1 / N; 
+	H = 1 / N;
 	xi = 0;
 	// Holds the left sums
 	sum = 0;
@@ -36,15 +36,20 @@ double left_sum(double N){
 }
 
 int main(){
-	// The value of the parition
-	double N = 4000000;
-	// Will be the count mechanic
-	TickTock time;
-	std::cout << "Start of program\n";
-	std::cout << "Number of N: " << N << std::endl;
-	time.tick();
-	std::cout << "The Left Riemann Sum Value: " << left_sum(N) << std::endl;
-	// Stops the time
-	time.tock("Code took: ");
-	return 0; 
+        // The value of the parition
+        double N = 4000000;
+        // Will be the count mechanic
+        TickTock time;
+        std::cout << "Start of program\n";
+        std::cout << "Number of N: " << N << std::endl;
+        time.tick();
+        double tot = left_sum(N);
+        std::cout << "The Left Riemann Sum Value: " << tot << std::endl;
+        // Stops the time
+        time.tock("Code took: ");
+        // Numerical error
+        double pi = 2 * acos(0.0);
+        std::cout << "Numerical Error(Difference pi and sum): " << pi - tot << std::endl;
+        return 0;
 }
+
