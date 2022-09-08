@@ -4,7 +4,7 @@ Assignment: Numerical integration and Shared-memory Parallelization
 For doing this, one could approximate the integral as follows h SUM (4/( 1 + xi^2)) with i varying from 1 to N, where xi = i*h, h = 1/N. This is known as the left Riemann sum.
 - Done in Serial Folder
 2. Verify your implementation comparing against the expected analytical solution, which should be "pi".
-- ERROR not sure as the sum is increasing as parition increases
+- Done sum is equal to 3, roughly equal to pi
 3. Provide an estimate of the numerical error and possible causes. Justify this with some nunerical experimentation.
 - STILL NEED TO DO
 4. Parallelize your implementation using a shared-memory approach.
