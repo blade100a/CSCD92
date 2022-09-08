@@ -21,7 +21,7 @@ double eq(double x){
 }
 
 // Function to calculate the Left Sum
-int left_sum(double N){
+double left_sum(double N){
 	// Variables given to us
 	double H, xi, sum;
 	H = 1 / N; 
@@ -30,11 +30,10 @@ int left_sum(double N){
 	sum = 0;
 	int i;
 	// Parralize the code using memory from initial x and H holding fraction of parition
-	#pragma omp parallel for shared(xi, H) private(i) reduction(+:sum)
-	// Loops through a total of the parition and adds the sum
+	#pragma omp parallel for shared(xi, H, N) private(i) reduction(+:sum)
 	for(i = 0; i < (int)N; i++){
 		xi = i*H;
-		sum += eq(xi)*(1/N);
+		sum += eq(xi)*H;
 	}
 	return sum;
 }
