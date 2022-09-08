@@ -4,7 +4,6 @@ Problem Set 3 - Assignment - Numerical integration and Shared-memory Paralleliza
 
 Current Problems:
 - serial and parallel have marignal times, but parallel is quicker slightly
-- not sure if the expected solution is 'pi'
 
 Reference:
 - vanzor - TickTock to time the codes and compare
