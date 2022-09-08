@@ -20,7 +20,7 @@ double eq(double x){
 }
 
 // Function to calculate the Left Sum
-int left_sum(double N){
+double left_sum(double N){
 	// Variables given to us
 	double H, xi, sum;
 	H = 1 / N; 
