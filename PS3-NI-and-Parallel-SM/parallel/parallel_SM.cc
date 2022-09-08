@@ -24,7 +24,7 @@ double eq(double x){
 double left_sum(double N){
 	// Variables given to us
 	double H, xi, sum;
-	H = 1 / N; 
+	H = 1 / N;
 	xi = 0;
 	// Holds the left sums
 	sum = 0;
@@ -46,8 +46,12 @@ int main(){
         std::cout << "Start of program\n";
         std::cout << "Number of N: " << N << std::endl;
         time.tick();
-        std::cout << "The Left Riemann Sum Value: " << left_sum(N) << std::endl;
+	double tot = left_sum(N);
+        std::cout << "The Left Riemann Sum Value: " << tot << std::endl;
 	// Stops the time
         time.tock("Code took: ");
-        return 0; 
+	// Numerical error
+	double pi = 2 * acos(0.0);
+	std::cout << "Numerical Error(Difference pi and sum): " << pi - tot << std::endl;
+        return 0;
 }
