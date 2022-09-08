@@ -34,7 +34,7 @@ int left_sum(double N){
 	// Loops through a total of the parition and adds the sum
 	for(i = 0; i < (int)N; i++){
 		xi = i*H;
-		sum += eq(xi)*H;
+		sum += eq(xi)*(1/N);
 	}
 	return sum;
 }
