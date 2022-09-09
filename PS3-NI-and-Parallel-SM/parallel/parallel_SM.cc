@@ -36,9 +36,12 @@ double left_sum(double N){
 int main(){
 	// The value of the parition
         double N = 4000000;
+	// File for output of stdout
+	freopen("output_p.txt", "a", stdout);
 	// Will be the count mechanic
         TickTock time;
         std::cout << "Start of program\n";
+	std::cout << "Number of Threads: 1\n";
         std::cout << "Number of N: " << N << std::endl;
         time.tick();
 	double tot = left_sum(N);
@@ -48,5 +51,6 @@ int main(){
 	// Numerical error
 	double pi = 2 * acos(0.0);
 	std::cout << "Numerical Error(Difference pi and sum): " << pi - tot << std::endl;
+	std::cout << "\n";
         return 0;
 }
