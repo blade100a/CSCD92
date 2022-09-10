@@ -1,0 +1,71 @@
+-------------STRONG SCALING------------------
+THREADS:1
+Start of program
+Number of N: 1e+08
+The Left Riemann Sum Value: 3.14159
+Code took:	3.131 sec
+Numerical Error(Difference pi and sum): -1e-08
+
+THREADS:2
+Start of program
+Number of N: 1e+08
+The Left Riemann Sum Value: 3.14159
+Code took:	1.567 sec
+Numerical Error(Difference pi and sum): -1e-08
+
+THREADS:4
+Start of program
+Number of N: 1e+08
+The Left Riemann Sum Value: 3.14159
+Code took:	0.7927 sec
+Numerical Error(Difference pi and sum): -1e-08
+
+THREADS:8
+Start of program
+Number of N: 1e+08
+The Left Riemann Sum Value: 3.14159
+Code took:	0.4394 sec
+Numerical Error(Difference pi and sum): -1e-08
+
+THREADS:16
+Start of program
+Number of N: 1e+08
+The Left Riemann Sum Value: 3.14159
+Code took:	0.2305 sec
+Numerical Error(Difference pi and sum): -1e-08
+
+---------------WEAK SCALING-------------------
+THREADS:1
+Start of program
+Number of N: 100
+The Left Riemann Sum Value: 3.15158
+Code took:	0.0001454 sec
+Numerical Error(Difference pi and sum): -0.009983
+
+THREADS:2
+Start of program
+Number of N: 200
+The Left Riemann Sum Value: 3.14659
+Code took:	0.0002399 sec
+Numerical Error(Difference pi and sum): -0.004996
+
+THREADS:4
+Start of program
+Number of N: 400
+The Left Riemann Sum Value: 3.14409
+Code took:	0.0002736 sec
+Numerical Error(Difference pi and sum): -0.002499
+
+THREADS:8
+Start of program
+Number of N: 800
+The Left Riemann Sum Value: 3.14284
+Code took:	0.0004299 sec
+Numerical Error(Difference pi and sum): -0.00125
+
+THREADS:16
+Start of program
+Number of N: 1600
+The Left Riemann Sum Value: 3.14222
+Code took:	0.004381 sec
+Numerical Error(Difference pi and sum): -0.0006249
