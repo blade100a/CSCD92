@@ -18,16 +18,15 @@ using namespace std;
 // Function to calculate the Left Sum
 double left_sum(double N){
 	// Variables given to us
-	double H, xi, sum;
+	double H, sum;
 	H = 1 / N;
-	xi = 0;
 	// Holds the left sums
 	sum = 0;
 	int i;
 	// Parralize the code using memory from initial x and H holding fraction of parition
-	#pragma omp parallel for shared(xi, H, N) private(i) reduction(+:sum)
+	#pragma omp parallel for default(none) shared(H, N) private(i) reduction(+:sum)
 	for(i = 0; i < (int)N; i++){
-		xi = i*H;
+		double xi = i*H;
 		sum += (4/(1 + (pow(xi, 2))))*H;
 	}
 	return sum;
@@ -35,17 +34,22 @@ double left_sum(double N){
 
 int main(){
 	// The value of the parition
-        double N = 4000000;
+        double N = 100000000;
 	// File for output of stdout
 	freopen("output_p.txt", "a", stdout);
 	// Will be the count mechanic
-        TickTock time;
-        std::cout << "Start of program\n";
-	std::cout << "Number of Threads: 1\n";
-        std::cout << "Number of N: " << N << std::endl;
-        time.tick();
-	double tot = left_sum(N);
-        std::cout << "The Left Riemann Sum Value: " << tot << std::endl;
+	TickTock time;
+	time.tick();
+	double tot;
+	omp_set_dynamic(0);
+	omp_set_num_threads(16);
+	#pragma omp shared(tot)
+	{
+        	std::cout << "Start of program\n";
+        	std::cout << "Number of N: " << N << std::endl;
+		tot = left_sum(N);
+        	std::cout << "The Left Riemann Sum Value: " << tot << std::endl;
+	}
 	// Stops the time
         time.tock("Code took: ");
 	// Numerical error
