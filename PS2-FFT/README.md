@@ -15,3 +15,6 @@ Problem:
 
 Progress:
 - COMPLETE
+
+Reference:
+Damian DZ Sample FFT
