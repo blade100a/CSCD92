@@ -6,6 +6,8 @@
 #include <fftw3.h>
 #include <cmath>
 
+using namespace std;
+
 // Defining my prototype
 void fft_setup(int n, fftw_complex x[], fftw_complex y[]);
 

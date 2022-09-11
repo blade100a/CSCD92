@@ -10,6 +10,7 @@ Part 2 FFT
 #include <complex>
 #include <fftw3.h>
 #include <cmath>
+#include "fft-plan.h"
 #include "fft-plan.cc"
 using namespace std;
 
