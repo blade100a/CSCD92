@@ -17,4 +17,8 @@ Progress:
 - COMPLETE
 
 Reference:
+Lectures Notes Fourier Transform
+https://support.scinet.utoronto.ca/education/go.php/545/content.php/cid/2453/
+https://www.fftw.org/fftw3_doc/The-1d-Discrete-Fourier-Transform-_0028DFT_0029.html
+https://www.fftw.org/fftw3_doc/Complex-One_002dDimensional-DFTs.html
 Damian DZ Sample FFT
