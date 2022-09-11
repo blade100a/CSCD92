@@ -8,6 +8,7 @@ Main Idea:
 - Creates an fftw_complex x which is of real numbers of 1-"N" and imaginary 0
 - Performs and computes the one-dimensional Fourier transform and outputs the complex equations gained from the FFT
 - The equations gained from this FFT is based off a frequency domain
+- THE CALL:g++ fft.cc -o fft -lfftw3
 
 Problem:
 - Facing issue referencing header file
