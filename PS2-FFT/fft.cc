@@ -18,6 +18,8 @@ using namespace std;
 #define IMAG 1
 
 int main(){
+	// Output file of std
+	freopen("output.txt", "a", stdout);
 	// Define size of array
 	int n = 10;
 	//fftw_complex *xp, *yp;
@@ -36,10 +38,7 @@ int main(){
 	// Output the following complex equations after FFTW
 	std::cout << "FFT = " << std::endl;
 	for (int i = 0; i < n; i++){
-		if (y[i][IMAG] < 0)
-			std::cout << y[i][REAL] << "-" << abs(y[i][IMAG]) << "i" << std::endl;
-		else
-			std::cout << y[i][REAL] << "+" << y[i][IMAG] << "i" << std::endl;
+		std::cout << y[i][REAL] << "+ (" << y[i][IMAG] << ")i" << std::endl;
 	}
 	std::cout << "Printed out: " << n << " Number of Complex equation after FFT 1 dimensional" << std::endl;
 	std::cout << "FINISHED\n";
