@@ -11,4 +11,7 @@ Main Idea:
 - THE CALL:g++ fft.cc -o fft -lfftw3
 
 Problem:
-- Facing issue referencing header file
+- None
+
+Progress:
+- COMPLETE
