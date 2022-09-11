@@ -5,6 +5,9 @@ Problem set 2
 
 Main Idea:
 - Was to try and work on FFT package and understand what occurs or happens
+- Creates an fftw_complex x which is of real numbers of 1-"N" and imaginary 0
+- Performs and computes the one-dimensional Fourier transform and outputs the complex equations gained from the FFT
+- The equations gained from this FFT is based off a frequency domain
 
 Problem:
-- Facing issues with library, cant find library
+- Facing issue referencing header file
