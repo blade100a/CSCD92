@@ -37,7 +37,7 @@ int main(){
 	// Create plan to run FFTW
 	fft_setup(n, x, y);
 	// Output the following complex equations after FFTW
-	std::cout << "FFT = " << std::endl;
+	std::cout << "OUTPUT FROM PLAN = " << std::endl;
 	for (int i = 0; i < n; i++){
 		std::cout << y[i][REAL] << "+ (" << y[i][IMAG] << ")i" << std::endl;
 	}
