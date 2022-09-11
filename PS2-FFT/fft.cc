@@ -30,16 +30,18 @@ int main(){
 	fftw_complex x[n];
 	fftw_complex y[n];
 	// Fill x complex array	
+	std::cout << "FFTW Complex X:\n ";
 	for (int i = 0; i < n; i++){
 		x[i][REAL] = i + 1;
 		x[i][IMAG] = 0;
+		std::cout << x[i][REAL] << " + (" << x[i][IMAG] << ")i" << std::endl;
 	}
 	// Create plan to run FFTW
 	fft_setup(n, x, y);
 	// Output the following complex equations after FFTW
 	std::cout << "OUTPUT FROM PLAN = " << std::endl;
 	for (int i = 0; i < n; i++){
-		std::cout << y[i][REAL] << "+ (" << y[i][IMAG] << ")i" << std::endl;
+		std::cout << y[i][REAL] << " + (" << y[i][IMAG] << ")i" << std::endl;
 	}
 	std::cout << "Printed out: " << n << " Number of Complex equation after FFT 1 dimensional" << std::endl;
 	std::cout << "FINISHED\n";

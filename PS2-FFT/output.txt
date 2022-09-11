@@ -1,16 +1,27 @@
+FFTW Complex X:
+ 1 + (0)i
+2 + (0)i
+3 + (0)i
+4 + (0)i
+5 + (0)i
+6 + (0)i
+7 + (0)i
+8 + (0)i
+9 + (0)i
+10 + (0)i
 STARTED PLAN
 EXECUTED PLAN
 DESTROYED PLAN
-OUTPUT FROM PLAN =
-55+ (0)i
--5+ (15.3884)i
--5+ (6.88191)i
--5+ (3.63271)i
--5+ (1.6246)i
--5+ (0)i
--5+ (-1.6246)i
--5+ (-3.63271)i
--5+ (-6.88191)i
--5+ (-15.3884)i
+OUTPUT FROM PLAN = 
+55 + (0)i
+-5 + (15.3884)i
+-5 + (6.88191)i
+-5 + (3.63271)i
+-5 + (1.6246)i
+-5 + (0)i
+-5 + (-1.6246)i
+-5 + (-3.63271)i
+-5 + (-6.88191)i
+-5 + (-15.3884)i
 Printed out: 10 Number of Complex equation after FFT 1 dimensional
 FINISHED
